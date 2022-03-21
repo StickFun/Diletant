@@ -1,7 +1,12 @@
 import random
 
 def getnamebox(link):
-    namebox = '_b_' + link[-15:] + '_join_name'
+    n = len(link)-1
+    namebox = ''
+    while link[n] != '/':
+        namebox = link[n] + namebox
+        n-=1
+    namebox = '_b_' + namebox + '_join_name'
     return namebox
 
 def saygoodbye():
