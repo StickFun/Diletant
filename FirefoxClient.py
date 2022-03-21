@@ -51,5 +51,5 @@ def teardown(driver):
     driver.close()
 
 
-join('https://bbb.ssau.ru/b/gew-x5n-wxi-tcd', 'Маркелов')
+while
 
