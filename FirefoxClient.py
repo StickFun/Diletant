@@ -15,7 +15,6 @@ def clickrequired(driver, name, namebox):
     name_form = driver.find_element(By.ID,
                                     namebox)
     name_form.send_keys(name)
-    print('имя введено')
     button_join = driver.find_element(By.CSS_SELECTOR, '#room-join')
     button_join.click()
 
@@ -62,9 +61,11 @@ def teardown(driver):
 
 join('https://bbb.ssau.ru/b/aph-ecx-6qn','Фомин Алексей')
 
-print('succesfully present during lesson')
 
-while time.localtime().tm_hour != 11 or time.localtime().tm_min < 25:
+
+while time.localtime().tm_hour != 11 or time.localtime().tm_min < 30:
     pass
 join('https://bbb.ssau.ru/b/99p-hvx-egj-903', '6203 Сычев Сергей')
+while time.localtime().tm_hour != 13 or time.localtime().tm_min < 30:
+join('https://bbb.ssau.ru/b/p00-qff-i1u-4ck', '6203 Сычев Сергей')
 
